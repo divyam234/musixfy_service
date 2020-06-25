@@ -1,21 +1,22 @@
 import requests
-import os
 import json
-from .Encrpyt import encode_data, get_key
-import musixfy
+from musixfy.utils.Encrpyt import encode_data, get_key
+from musixfy import config
+
+settings = config.get_settings()
 
 
 class ApiClient(object):
 
     def __init__(self):
-        self.access_token = os.getenv("token")
+        self.access_token = settings.token
         self.default_headers = {
             'User-Agent': 'KateMobileAndroid/49 lite-434 (Android 8.1.0; SDK 27; armeabi-v7a; Motorola MotoG3; en)'
         }
         self.http = requests.Session()
         self.proxies = {
-            "http": os.getenv("proxy"),
-            "https": os.getenv("proxy")
+            "http": settings.proxy,
+            "https": settings.proxy
         }
 
     def general_get(self, url, params):
@@ -24,7 +25,7 @@ class ApiClient(object):
             return {**json.loads(res.text), 'status': True}
 
         except Exception as e:
-            musixfy.app.logger.info('Exception', e.with_traceback())
+            # musixfy.app.logger.info('Exception', e.with_traceback())
             return {'status': False}
 
     def get_songs_list(self, query, offset):

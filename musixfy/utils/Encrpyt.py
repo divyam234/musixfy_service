@@ -1,9 +1,10 @@
 import base64
-import os
-from functools import lru_cache
 import json
-from Crypto import Random
-from Crypto.Cipher import AES
+from Cryptodome import Random
+from Cryptodome.Cipher import AES
+from musixfy import config
+
+settings = config.get_settings()
 
 iv = Random.new().read(AES.block_size)
 
@@ -27,4 +28,4 @@ def decode_data(key, data):
 
 
 def get_key():
-    return os.environ.get('secret', 'redux').encode('utf8')
+    return settings.secret.encode('utf8')
