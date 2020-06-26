@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  musixfy:
+    build: .
+    command: uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+    volumes:
+      - .:/app/
+    ports:
+      - 8000:8000
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - musixfy
+    restart: always

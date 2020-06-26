@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
-from musixfy.routers import index
+from app.routers import index
 import uvicorn
 import os
 import sys
@@ -29,4 +29,4 @@ async def after_request(request: Request, call_next):
 
 
 if __name__ == "__main__":
-    uvicorn.run("musixfy.main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)

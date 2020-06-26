@@ -2,7 +2,7 @@ import base64
 import json
 from Cryptodome import Random
 from Cryptodome.Cipher import AES
-from musixfy import config
+from app import config
 
 settings = config.get_settings()
 

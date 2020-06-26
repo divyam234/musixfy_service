@@ -1,7 +1,7 @@
 import requests
 import json
-from musixfy.utils.Encrpyt import encode_data, get_key
-from musixfy import config
+from app.utils.Encrpyt import encode_data, get_key
+from app import config, main
 
 settings = config.get_settings()
 
@@ -25,7 +25,7 @@ class ApiClient(object):
             return {**json.loads(res.text), 'status': True}
 
         except Exception as e:
-            # musixfy.app.logger.info('Exception', e.with_traceback())
+            main.app.logger.info('Exception', e.with_traceback())
             return {'status': False}
 
     def get_songs_list(self, query, offset):
