@@ -20,24 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa3f2643-f804-4f86-8858-29d1fcb6a39b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Musixfy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/routers/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musixfy/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musixfy/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musixfy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musixfy/routers/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/musixfy/routers/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/routers/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musixfy/utils/ApiClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/ApiClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musixfy/utils/Encrpyt.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/Encrpyt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musixfy/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +225,7 @@
       <workItem from="1593012022864" duration="7248000" />
       <workItem from="1593096680920" duration="769000" />
       <workItem from="1593097468580" duration="19639000" />
-      <workItem from="1593180935769" duration="6187000" />
+      <workItem from="1593180935769" duration="6415000" />
     </task>
     <servers />
   </component>
