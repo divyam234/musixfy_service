@@ -2,6 +2,7 @@ import requests
 import json
 from app.utils.Encrpyt import encode_data, get_key
 from app import config, main
+import hashlib
 
 settings = config.get_settings()
 
@@ -25,7 +26,6 @@ class ApiClient(object):
             return {**json.loads(res.text), 'status': True}
 
         except Exception as e:
-            main.app.logger.info('Exception', e.with_traceback())
             return {'status': False}
 
     def get_songs_list(self, query, offset):
@@ -43,7 +43,9 @@ class ApiClient(object):
         items = res['response']['items']
         if len(items) > 0:
             for index, item in enumerate(items):
-                entry = {'artist': item['artist'], 'title': item['title']}
+                str_to_hash = str(item['artist']) + str(item['owner_id'])
+                final_hash = hashlib.md5(str_to_hash.encode()).hexdigest()
+                entry = {'artist': item['artist'], 'title': item['title'], 'key': final_hash}
                 encode_result = encode_data(get_key(), {**entry, 'url': item['url']}).decode('utf8')
                 entry['encoded_url'] = encode_result
                 items[index] = entry

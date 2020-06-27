@@ -4,12 +4,10 @@ from pydantic import BaseSettings
 
 
 class Settings(BaseSettings):
-    token: str = ""
-    proxy: str = ""
-    secret: str = ""
-
-    class Config:
-        env_file = os.path.join(os.getcwd(), '.env')
+    token: str = os.getenv('ACCESS_TOKEN')
+    proxy: str = os.getenv('PROXY')
+    secret: str = os.getenv('SECRET')
+    cache_path: str = os.getenv('CACHE_PATH')
 
 
 @lru_cache()
