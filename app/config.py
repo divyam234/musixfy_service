@@ -4,6 +4,7 @@ from pydantic import BaseSettings
 
 
 class Settings(BaseSettings):
+    # Load Env Variables
     token: str = os.getenv('ACCESS_TOKEN')
     proxy: str = os.getenv('PROXY')
     secret: str = os.getenv('SECRET')

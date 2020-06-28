@@ -45,7 +45,8 @@ class ApiClient(object):
             for index, item in enumerate(items):
                 str_to_hash = str(item['artist']) + str(item['owner_id'])
                 final_hash = hashlib.md5(str_to_hash.encode()).hexdigest()
-                entry = {'artist': item['artist'], 'title': item['title'], 'key': final_hash}
+                entry = {'artist': item['artist'], 'title': item['title'], 'key': final_hash,
+                         'duration': item['duration']}
                 encode_result = encode_data(get_key(), {**entry, 'url': item['url']}).decode('utf8')
                 entry['encoded_url'] = encode_result
                 items[index] = entry

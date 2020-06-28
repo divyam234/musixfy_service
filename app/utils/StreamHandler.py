@@ -15,7 +15,6 @@ class StreamHandler(object):
         url = payload['url']
         key = payload['key']
         file_path = os.path.join(self.content_path, key + '.mp3')
-
         # check If we have access to file
         access = os.access(file_path, os.W_OK)
         if access is True:

@@ -2,10 +2,6 @@ from fastapi import FastAPI, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from app.routers import index
 import uvicorn
-import os
-import sys
-# Load Env Variables
-
 
 app = FastAPI()
 
