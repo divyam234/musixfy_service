@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa3f2643-f804-4f86-8858-29d1fcb6a39b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/ApiClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/ApiClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/StreamHandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/StreamHandler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +247,7 @@
       <workItem from="1593249839077" duration="11391000" />
       <workItem from="1593269881710" duration="19891000" />
       <workItem from="1593292012510" duration="419000" />
-      <workItem from="1593325678025" duration="779000" />
+      <workItem from="1593325678025" duration="8758000" />
     </task>
     <servers />
   </component>
