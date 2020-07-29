@@ -1,6 +1,6 @@
-requests~=2.24.0
-python-dotenv~=0.13.0
+requests
+python-dotenv
 pycryptodomex
 uvicorn
-fastapi~=0.58.0
-pydantic~=1.5.1
+fastapi
+pydantic
